@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaLaptopCode, FaMousePointer, FaKeybo
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { FaHashtag, FaChevronRight } from "react-icons/fa";
+import Image from "next/image";
 
 const scrollToSection = (id: string) => {
   if (typeof window !== "undefined") {
@@ -98,19 +99,21 @@ const HomeSection = () => {
       {/* Headline */}
       <div className="w-full flex flex-col items-center">
         <h1 className="text-3xl md:text-5xl font-bold mb-2 z-10 text-white max-w-lg mx-auto leading-tight">
-          Hi, I'm <span className="text-green-400">Mansi</span>, a <span className="text-green-400">creative developer</span>
+          Hi, I&apos;m <span className="text-green-400">Mansi</span>, a <span className="text-green-400">creative developer</span>
         </h1>
         {/* Subtitle */}
         <p className="text-gray-400 max-w-md mx-auto z-10 text-base md:text-lg mb-2">
-          I'm building a smart website using AI tools to make things faster, cooler, and more useful. Exploring how AI can improve design, content, and user experience every day.
+          I bring value to web development projects by merging technical expertise with creativity and aesthetics.
         </p>
       </div>
       {/* Background image of laptop with code */}
       <div className="absolute inset-0 -z-10">
-        <img
-          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1500&q=80"
+        <Image
+          src="/laptop-bg.jpg" // or your actual background image path
           alt="Laptop with code"
-          className="w-full h-full object-cover object-center opacity-30"
+          fill
+          className="object-cover object-center opacity-30"
+          priority
         />
         <div className="absolute inset-0 bg-gradient-to-b from-gray-950/90 to-gray-900/80" />
       </div>

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { FaLaptopCode, FaCode, FaTerminal } from "react-icons/fa";
+import { FaLaptopCode, FaTerminal } from "react-icons/fa";
 
 const floatingSymbols = [
   { icon: <FaLaptopCode className="text-5xl" />, style: "left-10 top-10", delay: 0 },

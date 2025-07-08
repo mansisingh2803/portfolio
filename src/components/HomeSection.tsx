@@ -67,7 +67,7 @@ const blurredLetters = [
 ];
 
 const HomeSection = () => {
-  const typewriter = useTypewriter(typewriterWords);
+  useTypewriter(typewriterWords);
   return (
     <section id="home" className="relative flex flex-col items-center justify-center min-h-[90vh] text-center px-4 overflow-hidden bg-gray-950">
       {/* Green radial gradient background */}

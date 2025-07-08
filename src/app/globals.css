@@ -24,3 +24,26 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 8s ease-in-out infinite;
+}
+
+.animate-wave { animation: waveMove 12s linear infinite alternate; }
+@keyframes waveMove { 0% { transform: translateY(0); } 100% { transform: translateY(20px); } }
+
+.animate-float { animation: float 4s ease-in-out infinite alternate; }
+.animate-float-rev { animation: float-rev 5s ease-in-out infinite alternate; }
+.animate-float-slow { animation: float 7s ease-in-out infinite alternate; }
+@keyframes float { 0% { transform: translateY(0); } 100% { transform: translateY(-20px); } }
+@keyframes float-rev { 0% { transform: translateY(0); } 100% { transform: translateY(20px); } }
+
+.bg-gradient-radial {
+  background: radial-gradient(circle at 60% 40%, #22c55e 0%, transparent 70%);
+}

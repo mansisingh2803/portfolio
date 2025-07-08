@@ -45,7 +45,7 @@ const AboutSection = () => (
       <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="flex-shrink-0">
         <div className="backdrop-blur-lg bg-gray-900/60 rounded-2xl shadow-2xl p-4 border border-green-900/30">
           <Image
-            src="/Mansi_profile.jpeg"
+            src="/mansi_profile.jpg"
             alt="Mansi profile photo"
             width={180}
             height={270}
